@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-label="Parkly reservation view placeholder">
+  <rect width="1200" height="760" fill="#0d1317"/><rect x="50" y="50" width="1100" height="660" rx="22" fill="#172127" stroke="#30433b"/><text x="90" y="114" font-family="Arial" font-size="28" font-weight="700" fill="#f4f7f6">Reservation management</text>
+  <rect x="90" y="154" width="1020" height="60" rx="12" fill="#1e2a30"/><rect x="112" y="176" width="280" height="17" rx="8" fill="#71817b"/><rect x="934" y="167" width="148" height="34" rx="8" fill="#6ee7b7"/>
+  <g font-family="monospace" font-size="15" fill="#91a19b"><text x="110" y="263">REFERENCE</text><text x="325" y="263">DRIVER</text><text x="585" y="263">SPACE</text><text x="760" y="263">STATUS</text><text x="950" y="263">TIME</text></g>
+  <g fill="#1e2a30"><rect x="90" y="286" width="1020" height="72" rx="10"/><rect x="90" y="372" width="1020" height="72" rx="10"/><rect x="90" y="458" width="1020" height="72" rx="10"/><rect x="90" y="544" width="1020" height="72" rx="10"/></g>
+  <g font-family="Arial" font-size="18" fill="#e9efed"><text x="110" y="330">PK-20541</text><text x="325" y="330">A. Khan</text><text x="585" y="330">B-18</text><text x="950" y="330">09:30</text><text x="110" y="416">PK-20542</text><text x="325" y="416">S. Ali</text><text x="585" y="416">A-07</text><text x="950" y="416">10:00</text></g>
+  <g fill="#6ee7b7"><rect x="760" y="307" width="110" height="28" rx="14"/><rect x="760" y="393" width="110" height="28" rx="14"/></g>
+</svg>

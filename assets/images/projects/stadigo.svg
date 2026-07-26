@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-label="StadiGo venue discovery placeholder">
+  <rect width="1200" height="760" fill="#10151b"/><rect x="42" y="42" width="1116" height="676" rx="24" fill="#f3f6f4"/>
+  <rect x="42" y="42" width="1116" height="82" rx="24" fill="#0f2c22"/><text x="82" y="94" font-family="Arial" font-weight="800" font-size="27" fill="#7cf0bf">StadiGo</text><text x="864" y="91" font-family="Arial" font-size="16" fill="#dce8e3">Venues   Bookings   Profile</text>
+  <text x="84" y="204" font-family="Arial" font-weight="700" font-size="44" fill="#15201c">Find your next game.</text><text x="84" y="240" font-family="Arial" font-size="18" fill="#68756f">Book quality sports venues near you.</text>
+  <rect x="84" y="274" width="1030" height="67" rx="14" fill="#ffffff" stroke="#d8e0dc"/><text x="116" y="316" font-family="Arial" font-size="17" fill="#87928d">Search by area, venue, or sport</text><rect x="946" y="287" width="150" height="41" rx="10" fill="#177753"/>
+  <g><rect x="84" y="390" width="315" height="256" rx="16" fill="#dce8e3"/><rect x="442" y="390" width="315" height="256" rx="16" fill="#dce8e3"/><rect x="800" y="390" width="315" height="256" rx="16" fill="#dce8e3"/></g>
+  <g fill="#177753"><circle cx="242" cy="482" r="56"/><circle cx="600" cy="482" r="56"/><circle cx="958" cy="482" r="56"/></g><g font-family="Arial" font-weight="700" font-size="20" fill="#17201c"><text x="113" y="595">Arena Sports Complex</text><text x="470" y="595">Northside Padel</text><text x="828" y="595">City Football Ground</text></g>
+</svg>
