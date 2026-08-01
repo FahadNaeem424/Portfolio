@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>index.html</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>projects/parkly.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>projects/stadigo.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>projects/hostello.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>projects/idmatrix.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>projects/letsbookit.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>projects/woocommerce-order-monitor.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+</urlset>

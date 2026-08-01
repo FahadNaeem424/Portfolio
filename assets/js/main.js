@@ -211,3 +211,27 @@
         });
     }
 }());
+
+
+// Static-build contact form: validate locally, then compose an email in the visitor's mail app.
+(function () {
+    'use strict';
+    const form = document.querySelector('[data-contact-form]');
+    if (!form || !form.getAttribute('action')?.startsWith('mailto:')) return;
+
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        if (!form.checkValidity()) return;
+
+        const data = new FormData(form);
+        const subject = String(data.get('subject') || 'Portfolio enquiry');
+        const body = [
+            `Name: ${data.get('name') || ''}`,
+            `Email: ${data.get('email') || ''}`,
+            '',
+            String(data.get('message') || '')
+        ].join('\n');
+        const recipient = form.getAttribute('action').replace(/^mailto:/, '');
+        window.location.href = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    });
+}());
