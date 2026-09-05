@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-label="WooCommerce Order Monitor placeholder">
-  <rect width="1200" height="760" fill="#11121a"/><rect x="45" y="45" width="1110" height="670" rx="19" fill="#1c1d28"/><rect x="45" y="45" width="1110" height="52" rx="19" fill="#292a38"/><text x="80" y="78" font-family="Arial" font-size="18" font-weight="700" fill="#f3f1f8">WooCommerce Order Monitor</text>
-  <text x="82" y="158" font-family="Arial" font-size="29" font-weight="700" fill="#f3f1f8">Live orders</text><rect x="82" y="193" width="1034" height="56" rx="10" fill="#292b39"/>
-  <g fill="#292b39"><rect x="82" y="284" width="1034" height="75" rx="10"/><rect x="82" y="377" width="1034" height="75" rx="10"/><rect x="82" y="470" width="1034" height="75" rx="10"/><rect x="82" y="563" width="1034" height="75" rx="10"/></g>
-  <g font-family="Arial" font-size="18" fill="#eceaf2"><text x="112" y="329">#10548</text><text x="280" y="329">Ayesha Khan</text><text x="598" y="329">Rs. 12,450</text><text x="112" y="422">#10547</text><text x="280" y="422">Hamza Ali</text><text x="598" y="422">Rs. 8,200</text></g><g fill="#a78bfa"><rect x="850" y="306" width="145" height="29" rx="14"/><rect x="850" y="399" width="145" height="29" rx="14"/></g>
-</svg>

@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-label="StadiGo booking flow placeholder">
-  <rect width="1200" height="760" fill="#0e1714"/><rect x="58" y="45" width="1084" height="670" rx="24" fill="#f4f7f5"/><text x="96" y="105" font-family="Arial" font-weight="800" font-size="27" fill="#177753">StadiGo</text>
-  <text x="96" y="185" font-family="Arial" font-weight="700" font-size="34" fill="#17201c">Book Arena Sports Complex</text><rect x="96" y="225" width="615" height="430" rx="16" fill="#e3ebe7"/>
-  <text x="742" y="250" font-family="Arial" font-weight="700" font-size="22" fill="#17201c">Select a time</text><g fill="#ffffff" stroke="#cdd8d2"><rect x="742" y="280" width="150" height="52" rx="10"/><rect x="910" y="280" width="150" height="52" rx="10"/><rect x="742" y="350" width="150" height="52" rx="10"/><rect x="910" y="350" width="150" height="52" rx="10"/></g>
-  <rect x="742" y="445" width="318" height="120" rx="14" fill="#e3ebe7"/><rect x="742" y="592" width="318" height="57" rx="12" fill="#177753"/><text x="901" y="628" text-anchor="middle" font-family="Arial" font-weight="700" font-size="18" fill="white">Confirm booking</text>
-</svg>
