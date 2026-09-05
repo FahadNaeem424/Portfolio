@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta name="description" content="See how Fahad Naeem built EventDesk, focused event booking and gate operations system, using PHP 8, MySQL, PDO, JavaScript.">
+    <meta name="author" content="Fahad Naeem">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="theme-color" content="#6ee7b7">
+    <meta name="color-scheme" content="dark light">
+    <link rel="canonical" href="https://fahadnaeem.com/projects/eventdesk.html">
+    <link rel="sitemap" type="application/xml" href="https://fahadnaeem.com/sitemap.xml">
+
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:title" content="EventDesk: Focused event booking and gate operations system | Fahad Naeem">
+    <meta property="og:description" content="See how Fahad Naeem built EventDesk, focused event booking and gate operations system, using PHP 8, MySQL, PDO, JavaScript.">
+    <meta property="og:url" content="https://fahadnaeem.com/projects/eventdesk.html">
+    <meta property="og:image" content="https://fahadnaeem.com/assets/images/projects/eventdesk-public.png">
+    <meta property="og:image:alt" content="EventDesk: Focused event booking and gate operations system | Fahad Naeem">
+            <meta property="og:image:width" content="1265">
+        <meta property="og:image:height" content="712">
+                <meta property="og:image:type" content="image/jpeg">
+        <meta property="og:image:secure_url" content="https://fahadnaeem.com/assets/images/projects/eventdesk-public.png">
+    <meta property="og:site_name" content="Fahad Naeem">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="EventDesk: Focused event booking and gate operations system | Fahad Naeem">
+    <meta name="twitter:description" content="See how Fahad Naeem built EventDesk, focused event booking and gate operations system, using PHP 8, MySQL, PDO, JavaScript.">
+    <meta name="twitter:image" content="https://fahadnaeem.com/assets/images/projects/eventdesk-public.png">
+    <meta name="twitter:image:alt" content="EventDesk: Focused event booking and gate operations system | Fahad Naeem">
+    
+    <title>EventDesk: Focused event booking and gate operations system | Fahad Naeem</title>
+    <link rel="icon" href="https://fahadnaeem.com/assets/images/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="https://fahadnaeem.com/assets/images/apple-touch-icon.png" sizes="180x180">
+            <link rel="me" href="https://github.com/FahadNaeem424">            <link rel="me" href="https://www.linkedin.com/in/fahadnaeem424/">            <link rel="me" href="https://www.fiverr.com/fahadnaeem424">            <link rel="me" href="https://upwork.com/freelancers/fahadn65">                            <link rel="stylesheet" href="https://fahadnaeem.com/assets/css/styles.css?v=1787395990">
+    <style>
+        :root {
+            --accent: #6ee7b7        }
+    </style>
+    <script>
+        (function() {
+            try {
+                var saved = localStorage.getItem('portfolio-theme');
+                if (saved === 'dark' || saved === 'light') document.documentElement.dataset.theme = saved;
+            } catch (error) {}
+        }());
+    </script>
+    <script type="application/ld+json">
+        {"@context":"https://schema.org","@graph":[{"@id":"https://fahadnaeem.com/#website","@type":"WebSite","name":"Fahad Naeem","alternateName":"Fahad Naeem Portfolio","url":"https://fahadnaeem.com/","description":"Fahad Naeem is a full-stack developer in Pakistan specialising in PHP, MySQL, JavaScript, C#, ASP.NET, Web API, and SQL Server applications.","author":{"@id":"https://fahadnaeem.com/#fahad-naeem"},"publisher":{"@id":"https://fahadnaeem.com/#fahad-naeem"},"inLanguage":"en"},{"@id":"https://fahadnaeem.com/#fahad-naeem","@type":"Person","name":"Fahad Naeem","givenName":"Fahad","familyName":"Naeem","alternateName":"FahadNaeem424","identifier":"fahad-naeem","url":"https://fahadnaeem.com/","description":"Fahad Naeem is a full-stack developer in Pakistan specialising in PHP, MySQL, JavaScript, C#, ASP.NET, Web API, and SQL Server applications.","jobTitle":"Full-Stack Developer","address":{"@type":"PostalAddress","addressLocality":"Multan","addressCountry":"PK"},"image":"https://fahadnaeem.com/assets/images/personal/fahad-naeem-tan-blazer-evening-headshot.webp","mainEntityOfPage":"https://fahadnaeem.com/","sameAs":["https://github.com/FahadNaeem424","https://www.linkedin.com/in/fahadnaeem424/","https://www.fiverr.com/fahadnaeem424","https://upwork.com/freelancers/fahadn65"],"knowsAbout":["Full-Stack Development","PHP","JavaScript","HTML5","CSS3","MySQL","C#",".NET Framework",".NET","ASP.NET","ASP.NET Web API","REST APIs","MS SQL Server","AI-Assisted Development","Vibe Coding","Object-Oriented Programming"],"knowsLanguage":["English","Urdu"]}]}    </script>
+</head>
+
+<body class="project-page">
+    <a class="skip-link" href="https://fahadnaeem.com/projects/eventdesk.html#main-content">Skip to content</a>
+    <header class="site-header" data-site-header>
+    <div class="container nav-shell">
+        <a class="brand" href="https://fahadnaeem.com/index.html" aria-label="Fahad Naeem home">
+            <span class="brand-mark" aria-hidden="true">FN</span>
+            <span class="brand-copy">
+                <strong>Fahad Naeem</strong>
+                <small>Full-Stack Developer</small>
+            </span>
+        </a>
+
+        <button class="nav-toggle icon-button" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-navigation" data-nav-toggle>
+            <span></span><span></span><span></span>
+        </button>
+
+        <nav class="primary-nav" id="primary-navigation" aria-label="Primary navigation" data-navigation>
+                                            <a href="https://fahadnaeem.com/index.html#home">Home</a>
+                                            <a href="https://fahadnaeem.com/index.html#about">About</a>
+                                            <a href="https://fahadnaeem.com/index.html#education">Education</a>
+                                            <a href="https://fahadnaeem.com/index.html#skills">Skills</a>
+                                            <a href="https://fahadnaeem.com/index.html#experience">Experience</a>
+                                            <a href="https://fahadnaeem.com/index.html#services">Services</a>
+                                            <a href="https://fahadnaeem.com/index.html#projects" aria-current="page">Projects</a>
+                                            <a href="https://fahadnaeem.com/index.html#testimonials">Reviews</a>
+                                            <a href="https://fahadnaeem.com/index.html#workspace">My Space</a>
+                                            <a href="https://fahadnaeem.com/index.html#contact">Contact</a>
+                        <a href="https://fahadnaeem.com/assets/docs/resume.html">Resume</a>
+        </nav>
+
+        <div class="nav-actions">
+                            <button class="theme-toggle icon-button" type="button" aria-label="Switch colour theme" title="Switch colour theme" data-theme-toggle>
+                    <span class="theme-icon" aria-hidden="true">◐</span>
+                </button>
+                        <a class="button button-small button-primary nav-contact" href="https://fahadnaeem.com/index.html#contact">Let’s talk</a>
+        </div>
+    </div>
+</header>
+<main id="main-content">
+    <article class="project-detail">
+        <header class="project-hero section">
+            <div class="container">
+                <a class="back-link" href="https://fahadnaeem.com/index.html#projects">← Back to all projects</a>
+                <div class="project-hero-grid">
+                    <div class="project-hero-copy reveal">
+                        <p class="eyebrow">Full-Stack · Booking · Reporting · 2026</p>
+                        <h1>EventDesk: Focused event booking and gate operations system</h1>
+                        <p class="project-subtitle">A software project and case study by <a href="https://fahadnaeem.com/index.html#about">Fahad Naeem</a>, full-stack developer with strong PHP and .NET expertise.</p>
+                        <p>A lightweight event administration platform combining public event and venue discovery with protected booking, ticket generation, payment control, gate check-in, verified reviews, and branded reports.</p>
+                        <div class="project-links">
+                                                            <a class="button button-primary" href="https://EventDesk.FahadNaeem.com" target="_blank" rel="noopener noreferrer">Live demo <span aria-hidden="true">↗</span></a>
+                                                    </div>
+                    </div>
+                    <div class="project-hero-image reveal">
+                        <img src="https://fahadnaeem.com/assets/images/projects/eventdesk-public.png" alt="EventDesk interface preview" width="1600" height="900">
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <nav class="project-subnav" aria-label="On this project page">
+            <div class="container">
+                <a href="https://fahadnaeem.com/projects/eventdesk.html#overview">Overview</a>
+                <a href="https://fahadnaeem.com/projects/eventdesk.html#features">Features</a>
+                <a href="https://fahadnaeem.com/projects/eventdesk.html#screenshots">Screenshots</a>
+                <a href="https://fahadnaeem.com/projects/eventdesk.html#technologies">Technologies</a>
+                <a href="https://fahadnaeem.com/projects/eventdesk.html#challenges">Challenges</a>
+                <a href="https://fahadnaeem.com/projects/eventdesk.html#solutions">Solutions</a>
+                <a href="https://fahadnaeem.com/projects/eventdesk.html#results">Results</a>
+            </div>
+        </nav>
+
+        <div class="container project-story">
+            <section class="project-story-section reveal" id="overview">
+                <p class="eyebrow">01 · Overview</p>
+                <h2>About the EventDesk software platform</h2>
+                <p class="large-copy">EventDesk is a compact event operations product for organizations that need public discovery and reliable back-office control without a complex attendee portal. Visitors can browse upcoming events and active venues, inspect availability and verified reviews, and publish separate event and venue feedback by proving ownership of a valid booking and ticket. A protected administrator workspace manages venues, events, bookings, payments, printable tickets and invoices, gate entry, branding, recovery settings, and exportable operational reports.</p>
+            </section>
+
+            <section class="project-story-section reveal" id="features">
+                <p class="eyebrow">02 · Features</p>
+                <h2>EventDesk features and capabilities</h2>
+                <div class="numbered-grid">
+                                            <div><span>01</span><p>Public homepage plus paginated event and venue directories with schedules, addresses, ticket prices, live seat availability, and review summaries</p></div>
+                                            <div><span>02</span><p>Protected administrator access with login throttling, secure session cookies, CSRF validation, security-question recovery, and editable profile credentials</p></div>
+                                            <div><span>03</span><p>Venue and event management with active states, unique slugs, registration deadlines, single-price tickets, and event capacity constrained by venue capacity</p></div>
+                                            <div><span>04</span><p>Multi-seat booking workflow with customer data, payment method and status, calculated totals, registration checks, and atomic booking-and-ticket creation</p></div>
+                                            <div><span>05</span><p>Structured booking and ticket references, printable invoices, individual tickets, and complete booking ticket bundles</p></div>
+                                            <div><span>06</span><p>Payment-aware gate check-in using event selection and ticket-code lookup, with duplicate-entry protection and an optional receive-payment-and-check-in path</p></div>
+                                            <div><span>07</span><p>Booking lifecycle controls for unpaid, paid, refunded, pending, confirmed, cancelled, and completed states, including refund blocking after entry</p></div>
+                                            <div><span>08</span><p>Verified ticket-holder reviews that publish separate event and venue ratings without requiring a public account</p></div>
+                                            <div><span>09</span><p>Event, venue, customer, and revenue reports with date and domain filters, portrait or landscape layouts, printing, and PDF downloads</p></div>
+                                            <div><span>10</span><p>Configurable company identity, currency, logos, invoice format, ticket page size, tickets per page, image sharpness, and footer content</p></div>
+                                    </div>
+            </section>
+
+            <section class="project-story-section reveal" id="screenshots">
+                <p class="eyebrow">03 · Screenshots</p>
+                <h2>EventDesk interface screenshots</h2>
+                <div class="screenshot-grid screenshot-grid--4">
+                                            <a href="https://fahadnaeem.com/assets/images/projects/eventdesk-public.png" target="_blank" rel="noopener" class="screenshot-link">
+                            <img src="https://fahadnaeem.com/assets/images/projects/eventdesk-public.png" alt="EventDesk public homepage with upcoming event and venue availability" loading="lazy" width="1600" height="900">
+                            <span>Open image ↗</span>
+                        </a>
+                                            <a href="https://fahadnaeem.com/assets/images/projects/eventdesk-admin-events.png" target="_blank" rel="noopener" class="screenshot-link">
+                            <img src="https://fahadnaeem.com/assets/images/projects/eventdesk-admin-events.png" alt="EventDesk administrator event list with capacity and booking actions" loading="lazy" width="1600" height="900">
+                            <span>Open image ↗</span>
+                        </a>
+                                            <a href="https://fahadnaeem.com/assets/images/projects/eventdesk-checkin.png" target="_blank" rel="noopener" class="screenshot-link">
+                            <img src="https://fahadnaeem.com/assets/images/projects/eventdesk-checkin.png" alt="EventDesk event-day ticket lookup and check-in workspace" loading="lazy" width="1600" height="900">
+                            <span>Open image ↗</span>
+                        </a>
+                                            <a href="https://fahadnaeem.com/assets/images/projects/eventdesk-report.png" target="_blank" rel="noopener" class="screenshot-link">
+                            <img src="https://fahadnaeem.com/assets/images/projects/eventdesk-report.png" alt="EventDesk filterable event report with PDF and print controls" loading="lazy" width="1600" height="900">
+                            <span>Open image ↗</span>
+                        </a>
+                                    </div>
+            </section>
+
+            <section class="project-story-section reveal" id="technologies">
+                <p class="eyebrow">04 · Technologies</p>
+                <h2>Technology stack used for EventDesk</h2>
+                <div class="large-tag-list">
+                    <span>PHP 8</span><span>MySQL</span><span>PDO</span><span>JavaScript</span><span>HTML5</span><span>CSS3</span><span>Headless Chrome</span>                </div>
+            </section>
+
+            <section class="project-story-section split-story reveal" id="challenges">
+                <div><p class="eyebrow">05 · Challenges</p><h2>EventDesk engineering challenges</h2></div>
+                <ul class="story-list"><li>Keeping a deliberately small product useful across public discovery, administrator booking, finance, gate staff, and management reporting</li><li>Maintaining consistent capacity, booking, payment, ticket, refund, and check-in states without introducing a heavyweight framework</li><li>Generating traceable ticket references and printable artifacts for multi-seat bookings while keeping each entry independently verifiable</li><li>Allowing trustworthy public reviews without operating a separate public-account system or exposing booking details</li><li>Producing filtered, branded reports that work both on screen and as downloadable print-ready documents</li></ul>
+            </section>
+
+            <section class="project-story-section split-story reveal" id="solutions">
+                <div><p class="eyebrow">06 · Solutions</p><h2>Fahad Naeem’s development approach</h2></div>
+                <ul class="story-list"><li>Organized the procedural PHP application around a focused relational model for administrators, venues, events, bookings, tickets, reviews, settings, and login attempts</li><li>Wrapped booking and per-seat ticket creation in a database transaction, validated registration and available capacity, and generated structured event-specific ticket codes</li><li>Derived booking states from payment and entry activity, checked ticket eligibility before each gate action, and prevented refunds once any ticket has entered</li><li>Verified reviews using an exact booking-code and ticket-code pair, enforced one review per ticket, and stored distinct event and venue feedback</li><li>Built dedicated report queries and reusable A4 layouts with filters, summaries, orientation controls, printing, and headless-browser PDF generation</li></ul>
+            </section>
+
+            <section class="project-story-section result-section reveal" id="results">
+                <p class="eyebrow">07 · Results</p>
+                <h2>EventDesk project results</h2>
+                <div class="result-grid"><div><span aria-hidden="true">✓</span><p>A focused workflow from event setup and venue allocation through booking, ticket delivery, payment, check-in, review, and reporting</p></div><div><span aria-hidden="true">✓</span><p>A fast administrator interface that surfaces seat availability, ticket price, booking state, and common actions directly in operational lists</p></div><div><span aria-hidden="true">✓</span><p>A practical gate tool that verifies the event, ticket, payment, booking, and previous-entry state before admitting a guest</p></div><div><span aria-hidden="true">✓</span><p>Trustworthy public feedback tied to real tickets while keeping customer contact and booking credentials off public review pages</p></div><div><span aria-hidden="true">✓</span><p>A portable PHP and MySQL system that runs directly under XAMPP and standard hosting with organization-controlled branding</p></div></div>
+            </section>
+
+            <aside class="next-project reveal">
+                                                        <p class="eyebrow">Next case study</p>
+                    <a href="https://fahadnaeem.com/projects/idmatrix.html">
+                        <span><strong>IDMatrix</strong><small>Privacy-conscious ID card print production system</small></span>
+                        <span aria-hidden="true">→</span>
+                    </a>
+                            </aside>
+        </div>
+    </article>
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@id":"https://fahadnaeem.com/projects/eventdesk.html#project","@type":"CreativeWork","name":"EventDesk: Focused event booking and gate operations system","headline":"EventDesk: Focused event booking and gate operations system | Fahad Naeem","description":"A lightweight event administration platform combining public event and venue discovery with protected booking, ticket generation, payment control, gate check-in, verified reviews, and branded reports.","image":[{"@type":"ImageObject","contentUrl":"https://fahadnaeem.com/assets/images/projects/eventdesk-public.png","url":"https://fahadnaeem.com/assets/images/projects/eventdesk-public.png","description":"EventDesk public homepage with upcoming event and venue availability","width":1600,"height":900},{"@type":"ImageObject","contentUrl":"https://fahadnaeem.com/assets/images/projects/eventdesk-admin-events.png","url":"https://fahadnaeem.com/assets/images/projects/eventdesk-admin-events.png","description":"EventDesk administrator event list with capacity and booking actions","width":1600,"height":900},{"@type":"ImageObject","contentUrl":"https://fahadnaeem.com/assets/images/projects/eventdesk-checkin.png","url":"https://fahadnaeem.com/assets/images/projects/eventdesk-checkin.png","description":"EventDesk event-day ticket lookup and check-in workspace","width":1600,"height":900},{"@type":"ImageObject","contentUrl":"https://fahadnaeem.com/assets/images/projects/eventdesk-report.png","url":"https://fahadnaeem.com/assets/images/projects/eventdesk-report.png","description":"EventDesk filterable event report with PDF and print controls","width":1600,"height":900}],"primaryImageOfPage":{"@type":"ImageObject","contentUrl":"https://fahadnaeem.com/assets/images/projects/eventdesk-public.png","url":"https://fahadnaeem.com/assets/images/projects/eventdesk-public.png","description":"EventDesk public homepage with upcoming event and venue availability","width":1600,"height":900},"creator":{"@id":"https://fahadnaeem.com/#fahad-naeem"},"author":{"@id":"https://fahadnaeem.com/#fahad-naeem"},"dateCreated":"2026-01-01","genre":["Full-Stack","Booking","Reporting"],"keywords":"PHP 8, MySQL, PDO, JavaScript, HTML5, CSS3, Headless Chrome","url":"https://fahadnaeem.com/projects/eventdesk.html","mainEntityOfPage":"https://fahadnaeem.com/projects/eventdesk.html","isPartOf":{"@id":"https://fahadnaeem.com/#website"},"inLanguage":"en"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Fahad Naeem","item":"https://fahadnaeem.com/"},{"@type":"ListItem","position":2,"name":"Software Projects","item":"https://fahadnaeem.com/#projects"},{"@type":"ListItem","position":3,"name":"EventDesk","item":"https://fahadnaeem.com/projects/eventdesk.html"}]}]}</script>
+</main>
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <div>
+            <a class="brand footer-brand" href="https://fahadnaeem.com/index.html">
+                <span class="brand-mark" aria-hidden="true">FN</span>
+                <span class="brand-copy"><strong>Fahad Naeem</strong><small>Full-Stack Developer</small></span>
+            </a>
+            <p>Fahad Naeem builds dependable full-stack PHP, MySQL, JavaScript, C#, ASP.NET, API, SQL, and Windows software.</p>
+        </div>
+        <div class="footer-links">
+            <strong>Navigate</strong>
+            <a href="https://fahadnaeem.com/index.html#about">About</a>
+            <a href="https://fahadnaeem.com/index.html#projects">Projects</a>
+            <a href="https://fahadnaeem.com/behind-the-build.html">My Space</a>
+            <a href="https://fahadnaeem.com/index.html#services">Services</a>
+            <a href="https://fahadnaeem.com/index.html#contact">Contact</a>
+        </div>
+        <div class="footer-contact">
+            <strong>Connect</strong>
+            <a href="mailto:fahadnaeem424@gmail.com">fahadnaeem424@gmail.com</a>
+            <span>Multan, Pakistan</span>
+            <div class="social-links footer-socials" aria-label="Professional profiles">
+            <a href="https://github.com/FahadNaeem424" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
+            <span aria-hidden="true">GH</span>
+        </a>
+            <a href="https://www.linkedin.com/in/fahadnaeem424/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
+            <span aria-hidden="true">in</span>
+        </a>
+            <a href="https://www.fiverr.com/fahadnaeem424" target="_blank" rel="noopener noreferrer" aria-label="Fiverr" title="Fiverr">
+            <span aria-hidden="true">fi</span>
+        </a>
+            <a href="https://upwork.com/freelancers/fahadn65" target="_blank" rel="noopener noreferrer" aria-label="Upwork" title="Upwork">
+            <span aria-hidden="true">up</span>
+        </a>
+            <a href="mailto:fahadnaeem424@gmail.com" aria-label="Email" title="Email">
+            <span aria-hidden="true">@</span>
+        </a>
+    </div>
+        </div>
+    </div>
+    <div class="container footer-bottom">
+        <p>© 2024–2026 Fahad Naeem. All rights reserved.</p>
+        <a href="https://fahadnaeem.com/projects/eventdesk.html#main-content">Back to top ↑</a>
+    </div>
+</footer>
+<script src="https://fahadnaeem.com/assets/js/main.js?v=1786805382" defer></script>
+</body>
+</html>

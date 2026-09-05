@@ -1,0 +1,566 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Resume of Fahad Naeem, a full-stack developer specialising in PHP, MySQL, JavaScript, C#, ASP.NET, Web API, and SQL.">
+  <meta name="color-scheme" content="light">
+  <title>Fahad Naeem | Full-Stack Developer - Resume</title>
+  <style>
+    :root {
+      --ink: #17211d;
+      --muted: #53615b;
+      --line: #dbe5e0;
+      --accent: #087a5b;
+      --accent-soft: #eaf6f1;
+      --paper: #ffffff;
+      --canvas: #e9efec;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--canvas);
+      color: var(--ink);
+      font-family: Inter, "Segoe UI", Arial, sans-serif;
+      font-size: 10pt;
+      line-height: 1.52;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    a:hover { color: var(--accent); }
+
+    .resume-toolbar {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 12px max(18px, calc((100vw - 210mm) / 2));
+      color: #eaf6f1;
+      background: rgba(20, 31, 27, .96);
+      box-shadow: 0 4px 20px rgba(15, 31, 24, .16);
+      backdrop-filter: blur(12px);
+    }
+
+    .toolbar-brand { display: flex; align-items: center; gap: 10px; }
+    .toolbar-mark {
+      display: grid;
+      width: 34px;
+      height: 34px;
+      place-items: center;
+      border-radius: 8px;
+      color: #123127;
+      background: #72e2ba;
+      font-size: 9pt;
+      font-weight: 800;
+      letter-spacing: .04em;
+    }
+    .toolbar-brand strong { display: block; font-size: 10pt; }
+    .toolbar-brand small { display: block; color: #aebdb6; font-size: 8pt; }
+    .toolbar-actions { display: flex; align-items: center; gap: 8px; }
+    .toolbar-button {
+      display: inline-flex;
+      min-height: 38px;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+      padding: 8px 14px;
+      border: 1px solid #46544e;
+      border-radius: 8px;
+      color: #eef8f4;
+      background: transparent;
+      font: inherit;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .toolbar-button:hover { color: #fff; border-color: #72e2ba; }
+    .toolbar-button.primary { color: #123127; border-color: #72e2ba; background: #72e2ba; }
+
+    .resume {
+      width: 210mm;
+      margin: 24px auto 48px;
+    }
+
+    .sheet {
+      position: relative;
+      width: 210mm;
+      min-height: 297mm;
+      padding: 15mm 16mm 13mm;
+      overflow: hidden;
+      background: var(--paper);
+      box-shadow: 0 18px 55px rgba(33, 54, 45, .14);
+    }
+
+    .sheet + .sheet { margin-top: 24px; }
+    .sheet::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 5px;
+      background: var(--accent);
+      content: "";
+    }
+
+    .resume-header {
+      display: grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 16mm;
+      align-items: end;
+      padding-bottom: 8mm;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .name {
+      margin: 0;
+      font-size: 30pt;
+      font-weight: 800;
+      line-height: 1;
+      letter-spacing: -.045em;
+    }
+    .headline {
+      margin: 8px 0 0;
+      color: var(--accent);
+      font-size: 12pt;
+      font-weight: 750;
+      letter-spacing: .01em;
+    }
+    .contact-list {
+      display: grid;
+      gap: 4px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      color: var(--muted);
+      font-size: 8.7pt;
+      text-align: right;
+    }
+    .contact-list strong { color: var(--ink); font-weight: 650; }
+
+    .summary {
+      margin: 7mm 0 0;
+      color: #31423a;
+      font-size: 10.4pt;
+      line-height: 1.58;
+    }
+
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+      margin: 6mm 0 0;
+    }
+    .metric {
+      padding: 10px 11px;
+      border: 1px solid #d8e9e2;
+      border-radius: 7px;
+      background: var(--accent-soft);
+    }
+    .metric strong { display: block; color: var(--accent); font-size: 14pt; line-height: 1.1; }
+    .metric span { display: block; margin-top: 3px; color: var(--muted); font-size: 7.8pt; }
+
+    .section { margin-top: 7mm; }
+    .section-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0 0 4mm;
+      color: var(--accent);
+      font-size: 9.3pt;
+      font-weight: 800;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+    .section-title::after { flex: 1; height: 1px; background: var(--line); content: ""; }
+
+    .skill-groups {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+    .skill-group h3 { margin: 0 0 4px; font-size: 9.2pt; }
+    .skill-group p { margin: 0; color: var(--muted); font-size: 8.4pt; line-height: 1.45; }
+
+    .experience-item,
+    .education-item,
+    .project { break-inside: avoid; }
+
+    .experience-item + .experience-item { margin-top: 5mm; }
+    .item-heading {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 10px;
+      align-items: baseline;
+    }
+    .item-heading h3 { margin: 0; font-size: 10.8pt; }
+    .item-period { color: var(--accent); font-size: 8.4pt; font-weight: 750; white-space: nowrap; }
+    .item-company { margin: 2px 0 0; color: var(--muted); font-size: 8.7pt; font-weight: 650; }
+    .item-summary { margin: 5px 0 0; color: var(--muted); font-size: 8.6pt; }
+    .bullet-list { margin: 5px 0 0; padding-left: 17px; color: #36473f; font-size: 8.45pt; }
+    .bullet-list li { margin: 2px 0; padding-left: 2px; }
+    .bullet-list li::marker { color: var(--accent); }
+
+    .page-heading {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 20px;
+      padding-bottom: 6mm;
+      border-bottom: 1px solid var(--line);
+    }
+    .page-heading h2 { margin: 0; font-size: 18pt; letter-spacing: -.02em; }
+    .page-heading p { margin: 0; color: var(--muted); font-size: 8.5pt; }
+
+    .project-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 11px; }
+    .project {
+      padding: 11px 12px;
+      border: 1px solid var(--line);
+      border-radius: 7px;
+    }
+    .project-top { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
+    .project h3 { margin: 0; font-size: 10.4pt; }
+    .project-year { color: var(--accent); font-size: 8pt; font-weight: 750; }
+    .project-role { margin: 2px 0 5px; color: var(--accent); font-size: 8pt; font-weight: 700; }
+    .project-link {
+      display: block;
+      margin: 0 0 4px;
+      color: #246b57;
+      font-size: 7.2pt;
+      font-weight: 650;
+      text-decoration: underline;
+      text-decoration-color: #9ccfbd;
+      text-underline-offset: 2px;
+    }
+    .project-link:hover { color: var(--accent); text-decoration-color: currentColor; }
+    .project p { margin: 0; color: var(--muted); font-size: 8.25pt; line-height: 1.45; }
+    .tech-line { margin-top: 6px !important; color: #30443b !important; font-size: 7.8pt !important; font-weight: 650; }
+
+    .education-list { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .education-item {
+      padding-left: 11px;
+      border-left: 3px solid #bfe7d7;
+    }
+    .education-item h3 { margin: 0; font-size: 9.8pt; line-height: 1.35; }
+    .education-item p { margin: 3px 0 0; color: var(--muted); font-size: 8.2pt; }
+    .education-score { color: var(--accent) !important; font-weight: 750; }
+
+    .two-column { display: grid; grid-template-columns: 1.3fr .7fr; gap: 12mm; }
+    .achievement-list { margin: 0; padding: 0; list-style: none; }
+    .achievement-list li { position: relative; margin-top: 8px; padding-left: 15px; color: var(--muted); font-size: 8.5pt; }
+    .achievement-list li:first-child { margin-top: 0; }
+    .achievement-list li::before { position: absolute; top: 5px; left: 0; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); content: ""; }
+    .achievement-list strong { display: block; margin-bottom: 1px; color: var(--ink); font-size: 8.9pt; }
+
+    .compact-list { display: grid; gap: 7px; margin: 0; padding: 0; list-style: none; }
+    .compact-list li { display: flex; justify-content: space-between; gap: 10px; padding-bottom: 6px; border-bottom: 1px solid var(--line); font-size: 8.5pt; }
+    .compact-list span { color: var(--muted); text-align: right; }
+
+    .capabilities {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 7px 12px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      color: var(--muted);
+      font-size: 8.4pt;
+    }
+    .capabilities li { position: relative; padding-left: 13px; }
+    .capabilities li::before { position: absolute; left: 0; color: var(--accent); content: "+"; font-weight: 800; }
+
+    .sheet:nth-child(2) { padding-top: 9mm; padding-bottom: 11mm; }
+    .sheet:nth-child(2) .page-heading { padding-bottom: 4mm; }
+    .sheet:nth-child(2) .section { margin-top: 3.5mm; }
+    .sheet:nth-child(2) .section-title { margin-bottom: 2.2mm; }
+    .sheet:nth-child(2) .project-grid { gap: 8px; }
+    .sheet:nth-child(2) .project { padding: 7px 10px; }
+    .sheet:nth-child(2) .project-role { margin-bottom: 2px; }
+    .sheet:nth-child(2) .project-link { margin-bottom: 3px; }
+    .sheet:nth-child(2) .project p { font-size: 8pt; line-height: 1.32; }
+    .sheet:nth-child(2) .tech-line { margin-top: 4px !important; }
+    .sheet:nth-child(2) .education-item p { margin-top: 2px; }
+    .sheet:nth-child(2) .achievement-list li { margin-top: 5px; }
+    .sheet:nth-child(2) .compact-list { gap: 4px; }
+    .sheet:nth-child(2) .capabilities { gap: 4px 12px; }
+
+    .sheet:first-child { padding-top: 13mm; }
+    .sheet:first-child .resume-header { padding-bottom: 6mm; }
+    .sheet:first-child .summary { margin-top: 5mm; line-height: 1.5; }
+    .sheet:first-child .metrics { margin-top: 4mm; }
+    .sheet:first-child .metric { padding: 8px 10px; }
+    .sheet:first-child .section { margin-top: 5mm; }
+    .sheet:first-child .section-title { margin-bottom: 2.5mm; }
+    .sheet:first-child .skill-group p { line-height: 1.38; }
+    .sheet:first-child .experience-item + .experience-item { margin-top: 3mm; }
+    .sheet:first-child .item-summary,
+    .sheet:first-child .bullet-list { margin-top: 3px; }
+    .sheet:first-child .bullet-list li { margin: 1px 0; }
+
+    .resume-footer {
+      position: absolute;
+      right: 16mm;
+      bottom: 7mm;
+      left: 16mm;
+      display: flex;
+      justify-content: space-between;
+      padding-top: 3mm;
+      border-top: 1px solid var(--line);
+      color: #6d7b75;
+      font-size: 7.5pt;
+    }
+
+    @media screen and (max-width: 860px) {
+      body { font-size: 11pt; }
+      .resume-toolbar { position: relative; padding: 12px 16px; }
+      .toolbar-brand small { display: none; }
+      .toolbar-button.secondary { display: none; }
+      .resume { width: auto; margin: 0; }
+      .sheet { width: auto; min-height: 0; padding: 32px 24px 64px; box-shadow: none; }
+      .sheet + .sheet { margin-top: 12px; }
+      .resume-header { grid-template-columns: 1fr; gap: 20px; }
+      .contact-list { text-align: left; }
+      .metrics, .skill-groups, .project-grid, .education-list, .two-column { grid-template-columns: 1fr; }
+      .page-heading { align-items: flex-start; flex-direction: column; }
+      .resume-footer { right: 24px; bottom: 22px; left: 24px; }
+    }
+
+    @page { size: A4; margin: 0; }
+
+    @media print {
+      body { background: #fff; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+      .resume-toolbar { display: none !important; }
+      .resume { width: 210mm; margin: 0; }
+      .sheet { width: 210mm; height: 297mm; min-height: 297mm; padding: 15mm 16mm 13mm; box-shadow: none; break-after: page; page-break-after: always; }
+      .sheet + .sheet { margin-top: 0; }
+      .sheet:last-child { break-after: auto; page-break-after: auto; }
+      .resume-header { grid-template-columns: 1.2fr .8fr; gap: 16mm; }
+      .contact-list { text-align: right; }
+      .metrics { grid-template-columns: repeat(4, 1fr); }
+      .skill-groups { grid-template-columns: repeat(3, 1fr); }
+      .project-grid, .education-list { grid-template-columns: 1fr 1fr; }
+      .two-column { grid-template-columns: 1.3fr .7fr; }
+      .page-heading { align-items: baseline; flex-direction: row; }
+      .resume-footer { right: 16mm; bottom: 7mm; left: 16mm; }
+      a { color: inherit; }
+    }
+  </style>
+</head>
+<body>
+  <header class="resume-toolbar" aria-label="Resume actions">
+    <a class="toolbar-brand" href="https://fahadnaeem.com/" aria-label="Return to Fahad Naeem portfolio">
+      <span class="toolbar-mark" aria-hidden="true">FN</span>
+      <span><strong>Fahad Naeem</strong><small>Professional resume</small></span>
+    </a>
+    <div class="toolbar-actions">
+      <a class="toolbar-button secondary" href="https://fahadnaeem.com/">Back to portfolio</a>
+      <button class="toolbar-button secondary" type="button" onclick="window.print()">Print / Save as PDF</button>
+      <a class="toolbar-button primary" href="https://fahadnaeem.com/assets/docs/Fahad-Naeem-Resume.pdf" download>Download PDF</a>
+    </div>
+  </header>
+
+  <main class="resume" aria-label="Resume of Fahad Naeem">
+    <article class="sheet">
+      <header class="resume-header">
+        <div>
+          <h1 class="name">Fahad Naeem</h1>
+          <p class="headline">Full-Stack Developer | PHP/Web and .NET</p>
+        </div>
+        <ul class="contact-list" aria-label="Contact details">
+          <li><strong>Multan, Pakistan</strong></li>
+          <li><strong>Age: 26 years</strong></li>
+          <li><a href="mailto:fahadnaeem424@gmail.com">fahadnaeem424@gmail.com</a></li>
+          <li><a href="tel:+923084530109">+92 308 4530109</a></li>
+          <li><a href="https://fahadnaeem.com">fahadnaeem.com</a> | <a href="https://www.linkedin.com/in/fahadnaeem424/">LinkedIn</a> | <a href="https://github.com/FahadNaeem424">GitHub</a></li>
+        </ul>
+      </header>
+
+      <p class="summary">Full-stack developer freelancing professionally since 2019, designing, developing, debugging, and deploying dependable web platforms, APIs, databases, and Windows applications. Strongest across PHP, MySQL, JavaScript, C#, ASP.NET, Web API, REST integrations, and SQL Server, with modern AI-assisted and vibe-coding workflows supporting rapid, maintainable delivery.</p>
+
+      <section class="metrics" aria-label="Career highlights">
+        <div class="metric"><strong>250+</strong><span>Projects delivered</span></div>
+        <div class="metric"><strong>100+</strong><span>Clients worldwide</span></div>
+        <div class="metric"><strong>4.9/5</strong><span>Overall rating</span></div>
+        <div class="metric"><strong>2019</strong><span>Freelancing since</span></div>
+      </section>
+
+      <section class="section" aria-labelledby="skills-title">
+        <h2 class="section-title" id="skills-title">Core expertise</h2>
+        <div class="skill-groups">
+          <div class="skill-group">
+            <h3>.NET Development</h3>
+            <p>C#, .NET Framework, .NET, ASP.NET, Web API, object-oriented programming, WPF, and Windows Forms</p>
+          </div>
+          <div class="skill-group">
+            <h3>Full-Stack Web and APIs</h3>
+            <p>PHP 8, MySQL, JavaScript, HTML5, CSS3, REST APIs, PDO, WordPress, and WooCommerce</p>
+          </div>
+          <div class="skill-group">
+            <h3>Computer Science and Delivery</h3>
+            <p>Data structures, algorithms, software engineering, database systems, computer networks, AI-assisted development, testing, and code review</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="experience-title">
+        <h2 class="section-title" id="experience-title">Professional experience</h2>
+
+        <article class="experience-item">
+          <div class="item-heading">
+            <h3>Visiting Lecturer (College Teaching Intern)</h3>
+            <span class="item-period">Nov 2024 - Present</span>
+          </div>
+          <p class="item-company"><a href="https://gcsmultan.edu.pk/">Govt. Graduate College of Science Multan</a> | Multan, Pakistan</p>
+          <p class="item-summary">Appointed by the Higher Education Department, Government of Punjab, as a Visiting Lecturer in Computer Science.</p>
+          <ul class="bullet-list">
+            <li>Delivered Computer Science lectures at Intermediate (ICS) and bachelor's (BS) levels, covering Programming Fundamentals, Data Structures, Virtual Systems, Computer Architecture, problem-solving, and other core courses through lectures and practical lab work.</li>
+            <li>Supervised computer labs and mentored students on academic projects and assignments.</li>
+            <li>Supported administrative and office operations through documentation, reporting, and academic coordination.</li>
+            <li>Designed and maintained the office IT network, enabling network printing, scanning, shared storage, multimedia, internet access, and collaboration tools while providing technical support to staff and faculty.</li>
+          </ul>
+        </article>
+
+        <article class="experience-item">
+          <div class="item-heading">
+            <h3>Software Developer (.NET Developer)</h3>
+            <span class="item-period">Nov 2021 - Oct 2022</span>
+          </div>
+          <p class="item-company">3F Technologies (Pvt.) Ltd. | Multan, Pakistan</p>
+          <p class="item-summary">Contributed to multiple .NET projects in a collaborative software development environment.</p>
+          <ul class="bullet-list">
+            <li>Designed, developed, and deployed .NET applications to meet client and industry requirements.</li>
+            <li>Analysed existing software and implemented features that improved functionality and user experience.</li>
+            <li>Diagnosed and resolved application issues to improve reliability and day-to-day performance.</li>
+            <li>Worked with teammates and stakeholders to clarify requirements and deliver maintainable solutions.</li>
+          </ul>
+        </article>
+
+        <article class="experience-item">
+          <div class="item-heading">
+            <h3>Freelancer (Full-Stack &amp; .NET Developer)</h3>
+            <span class="item-period">2019 - Present</span>
+          </div>
+          <p class="item-company">Fiverr.com | Remote</p>
+          <p class="item-summary">Delivering tailored full-stack web, API, database, integration, .NET, and desktop software for an international client base.</p>
+          <ul class="bullet-list">
+            <li>Delivered 250+ projects for 100+ clients worldwide while maintaining a 4.9/5 overall rating across freelance platforms.</li>
+            <li>Built dependable solutions aligned with client workflows, technical requirements, user needs, and business goals.</li>
+            <li>Owned delivery from discovery and technical planning through development, debugging, integration, handover, and ongoing support.</li>
+            <li>Built and enhanced C#, ASP.NET, PHP, JavaScript, SQL Server, and MySQL applications, including REST and WooCommerce integrations.</li>
+          </ul>
+        </article>
+      </section>
+
+      <footer class="resume-footer"><span>Fahad Naeem | Full-Stack Developer</span><span>Page 1 of 2</span></footer>
+    </article>
+
+    <article class="sheet">
+      <header class="page-heading">
+        <h2>Selected work and qualifications</h2>
+        <p><a href="https://fahadnaeem.com">fahadnaeem.com</a> | <a href="mailto:fahadnaeem424@gmail.com">fahadnaeem424@gmail.com</a></p>
+      </header>
+
+      <section class="section" aria-labelledby="education-title">
+        <h2 class="section-title" id="education-title">Education</h2>
+        <div class="education-list">
+          <article class="education-item">
+            <h3>Master of Science in Computer Science (MSCS)</h3>
+            <p>Virtual University of Pakistan | Lahore, Pakistan</p>
+            <p>Oct 2022 - Sep 2024</p>
+            <p class="education-score">CGPA: 3.80 / 4.00</p>
+          </article>
+          <article class="education-item">
+            <h3>Master of Computer Science (MCS)</h3>
+            <p>Bahauddin Zakariya University | Multan, Pakistan</p>
+            <p>Oct 2019 - Aug 2021</p>
+            <p class="education-score">CGPA: 3.78 / 4.00</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="projects-title">
+        <h2 class="section-title" id="projects-title">Selected projects</h2>
+        <div class="project-grid">
+          <article class="project">
+            <div class="project-top"><h3><a href="https://fahadnaeem.com/projects/eventora.html">Eventora</a></h3><span class="project-year">2026</span></div>
+            <p class="project-role">Full-Stack Event Booking and Operations Platform</p>
+            <a class="project-link" href="https://fahadnaeem.com/projects/eventora.html">https://fahadnaeem.com/projects/eventora.html</a>
+            <p>Built a complete event lifecycle system covering public discovery, multi-attendee booking, payments, ticketing, check-in, refunds, CMS content, notifications, role-aware administration, and branded reports.</p>
+            <p class="tech-line">PHP 8 | MySQL | JavaScript | HTML5 | CSS3 | TCPDF | PHPWord</p>
+          </article>
+          <article class="project">
+            <div class="project-top"><h3><a href="https://fahadnaeem.com/projects/eventdesk.html">EventDesk</a></h3><span class="project-year">2026</span></div>
+            <p class="project-role">Event Booking and Gate Operations System</p>
+            <a class="project-link" href="https://fahadnaeem.com/projects/eventdesk.html">https://fahadnaeem.com/projects/eventdesk.html</a>
+            <p>Created a focused administration platform for venues, multi-seat bookings, printable tickets, payment control, verified reviews, gate check-in, and PDF reporting.</p>
+            <p class="tech-line">PHP 8 | MySQL | PDO | JavaScript | Headless Chrome</p>
+          </article>
+          <article class="project">
+            <div class="project-top"><h3><a href="https://fahadnaeem.com/projects/idmatrix.html">IDMatrix</a></h3><span class="project-year">2026</span></div>
+            <p class="project-role">Privacy-Conscious Document Automation System</p>
+            <a class="project-link" href="https://fahadnaeem.com/projects/idmatrix.html">https://fahadnaeem.com/projects/idmatrix.html</a>
+            <p>Developed a public converter and protected console that processes identity card images, applies export-only crossing labels, and creates eight-copy A4 DOCX and PDF sheets.</p>
+            <p class="tech-line">PHP 8 | MySQL | JavaScript | GD | PHPWord | TCPDF</p>
+          </article>
+          <article class="project">
+            <div class="project-top"><h3><a href="https://fahadnaeem.com/projects/arenora.html">Arenora</a></h3><span class="project-year">2026</span></div>
+            <p class="project-role">Stadium Booking, Finance, and Operations Platform</p>
+            <a class="project-link" href="https://fahadnaeem.com/projects/arenora.html">https://fahadnaeem.com/projects/arenora.html</a>
+            <p>Built a stadium-management product covering public venue discovery, maintenance-aware availability, conflict-safe reservations, payments, refunds, expenses, verified reviews, permissions, and branded reports.</p>
+            <p class="tech-line">PHP 8.2 | MySQL | JavaScript | Bootstrap 5 | GD | mPDF</p>
+          </article>
+        </div>
+      </section>
+
+      <div class="two-column">
+        <section class="section" aria-labelledby="achievements-title">
+          <h2 class="section-title" id="achievements-title">Career achievements</h2>
+          <ul class="achievement-list">
+            <li><strong>High customer satisfaction</strong>Completed 250+ projects with a 4.9 overall rating across freelance platforms.</li>
+            <li><strong>International client delivery</strong>Built a professional network spanning 100+ clients worldwide.</li>
+            <li><strong>Cross-stack expertise</strong>Delivered complete PHP/web and .NET solutions across interfaces, APIs, databases, integrations, automation, and Windows applications.</li>
+          </ul>
+        </section>
+
+        <section class="section" aria-labelledby="languages-title">
+          <h2 class="section-title" id="languages-title">Languages</h2>
+          <ul class="compact-list">
+            <li><strong>Urdu</strong><span>Native</span></li>
+            <li><strong>English</strong><span>Proficient</span></li>
+          </ul>
+        </section>
+      </div>
+
+      <section class="section" aria-labelledby="capabilities-title">
+        <h2 class="section-title" id="capabilities-title">Professional capabilities</h2>
+        <ul class="capabilities">
+          <li>Full-stack portals, dashboards, booking systems, and business applications</li>
+          <li>Windows desktop software using C#, .NET, WPF, and WinForms</li>
+          <li>REST API, WordPress, WooCommerce, webhook, and data-sync integrations</li>
+          <li>Legacy modernisation, feature extensions, debugging, and performance improvements</li>
+          <li>AI-assisted and vibe-coding workflows for rapid prototyping and focused iteration</li>
+        </ul>
+      </section>
+
+      <section class="section" aria-labelledby="profile-title">
+        <h2 class="section-title" id="profile-title">Professional profile</h2>
+        <div class="two-column">
+          <p class="item-summary" style="margin:0">Available for freelance and remote opportunities. Known for translating complex requirements into clear, practical software and supporting clients through delivery and beyond.</p>
+          <ul class="compact-list">
+            <li><strong>Fiverr</strong><span>fahadnaeem424</span></li>
+            <li><strong>Upwork</strong><span>fahadn65</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <footer class="resume-footer"><span>Fahad Naeem | Full-Stack Developer</span><span>Page 2 of 2</span></footer>
+    </article>
+  </main>
+</body>
+</html>

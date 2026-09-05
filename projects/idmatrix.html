@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta name="description" content="See how Fahad Naeem built IDMatrix, privacy-conscious ID card print production system, using PHP 8, MySQL, PDO, JavaScript.">
+    <meta name="author" content="Fahad Naeem">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="theme-color" content="#6ee7b7">
+    <meta name="color-scheme" content="dark light">
+    <link rel="canonical" href="https://fahadnaeem.com/projects/idmatrix.html">
+    <link rel="sitemap" type="application/xml" href="https://fahadnaeem.com/sitemap.xml">
+
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:title" content="IDMatrix: Privacy-conscious ID card print production system | Fahad Naeem">
+    <meta property="og:description" content="See how Fahad Naeem built IDMatrix, privacy-conscious ID card print production system, using PHP 8, MySQL, PDO, JavaScript.">
+    <meta property="og:url" content="https://fahadnaeem.com/projects/idmatrix.html">
+    <meta property="og:image" content="https://fahadnaeem.com/assets/images/projects/idmatrix-sample-upload.png">
+    <meta property="og:image:alt" content="IDMatrix: Privacy-conscious ID card print production system | Fahad Naeem">
+            <meta property="og:image:width" content="1265">
+        <meta property="og:image:height" content="712">
+                <meta property="og:image:type" content="image/jpeg">
+        <meta property="og:image:secure_url" content="https://fahadnaeem.com/assets/images/projects/idmatrix-sample-upload.png">
+    <meta property="og:site_name" content="Fahad Naeem">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="IDMatrix: Privacy-conscious ID card print production system | Fahad Naeem">
+    <meta name="twitter:description" content="See how Fahad Naeem built IDMatrix, privacy-conscious ID card print production system, using PHP 8, MySQL, PDO, JavaScript.">
+    <meta name="twitter:image" content="https://fahadnaeem.com/assets/images/projects/idmatrix-sample-upload.png">
+    <meta name="twitter:image:alt" content="IDMatrix: Privacy-conscious ID card print production system | Fahad Naeem">
+    
+    <title>IDMatrix: Privacy-conscious ID card print production system | Fahad Naeem</title>
+    <link rel="icon" href="https://fahadnaeem.com/assets/images/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="https://fahadnaeem.com/assets/images/apple-touch-icon.png" sizes="180x180">
+            <link rel="me" href="https://github.com/FahadNaeem424">            <link rel="me" href="https://www.linkedin.com/in/fahadnaeem424/">            <link rel="me" href="https://www.fiverr.com/fahadnaeem424">            <link rel="me" href="https://upwork.com/freelancers/fahadn65">                            <link rel="stylesheet" href="https://fahadnaeem.com/assets/css/styles.css?v=1787395990">
+    <style>
+        :root {
+            --accent: #6ee7b7        }
+    </style>
+    <script>
+        (function() {
+            try {
+                var saved = localStorage.getItem('portfolio-theme');
+                if (saved === 'dark' || saved === 'light') document.documentElement.dataset.theme = saved;
+            } catch (error) {}
+        }());
+    </script>
+    <script type="application/ld+json">
+        {"@context":"https://schema.org","@graph":[{"@id":"https://fahadnaeem.com/#website","@type":"WebSite","name":"Fahad Naeem","alternateName":"Fahad Naeem Portfolio","url":"https://fahadnaeem.com/","description":"Fahad Naeem is a full-stack developer in Pakistan specialising in PHP, MySQL, JavaScript, C#, ASP.NET, Web API, and SQL Server applications.","author":{"@id":"https://fahadnaeem.com/#fahad-naeem"},"publisher":{"@id":"https://fahadnaeem.com/#fahad-naeem"},"inLanguage":"en"},{"@id":"https://fahadnaeem.com/#fahad-naeem","@type":"Person","name":"Fahad Naeem","givenName":"Fahad","familyName":"Naeem","alternateName":"FahadNaeem424","identifier":"fahad-naeem","url":"https://fahadnaeem.com/","description":"Fahad Naeem is a full-stack developer in Pakistan specialising in PHP, MySQL, JavaScript, C#, ASP.NET, Web API, and SQL Server applications.","jobTitle":"Full-Stack Developer","address":{"@type":"PostalAddress","addressLocality":"Multan","addressCountry":"PK"},"image":"https://fahadnaeem.com/assets/images/personal/fahad-naeem-tan-blazer-evening-headshot.webp","mainEntityOfPage":"https://fahadnaeem.com/","sameAs":["https://github.com/FahadNaeem424","https://www.linkedin.com/in/fahadnaeem424/","https://www.fiverr.com/fahadnaeem424","https://upwork.com/freelancers/fahadn65"],"knowsAbout":["Full-Stack Development","PHP","JavaScript","HTML5","CSS3","MySQL","C#",".NET Framework",".NET","ASP.NET","ASP.NET Web API","REST APIs","MS SQL Server","AI-Assisted Development","Vibe Coding","Object-Oriented Programming"],"knowsLanguage":["English","Urdu"]}]}    </script>
+</head>
+
+<body class="project-page">
+    <a class="skip-link" href="https://fahadnaeem.com/projects/idmatrix.html#main-content">Skip to content</a>
+    <header class="site-header" data-site-header>
+    <div class="container nav-shell">
+        <a class="brand" href="https://fahadnaeem.com/index.html" aria-label="Fahad Naeem home">
+            <span class="brand-mark" aria-hidden="true">FN</span>
+            <span class="brand-copy">
+                <strong>Fahad Naeem</strong>
+                <small>Full-Stack Developer</small>
+            </span>
+        </a>
+
+        <button class="nav-toggle icon-button" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-navigation" data-nav-toggle>
+            <span></span><span></span><span></span>
+        </button>
+
+        <nav class="primary-nav" id="primary-navigation" aria-label="Primary navigation" data-navigation>
+                                            <a href="https://fahadnaeem.com/index.html#home">Home</a>
+                                            <a href="https://fahadnaeem.com/index.html#about">About</a>
+                                            <a href="https://fahadnaeem.com/index.html#education">Education</a>
+                                            <a href="https://fahadnaeem.com/index.html#skills">Skills</a>
+                                            <a href="https://fahadnaeem.com/index.html#experience">Experience</a>
+                                            <a href="https://fahadnaeem.com/index.html#services">Services</a>
+                                            <a href="https://fahadnaeem.com/index.html#projects" aria-current="page">Projects</a>
+                                            <a href="https://fahadnaeem.com/index.html#testimonials">Reviews</a>
+                                            <a href="https://fahadnaeem.com/index.html#workspace">My Space</a>
+                                            <a href="https://fahadnaeem.com/index.html#contact">Contact</a>
+                        <a href="https://fahadnaeem.com/assets/docs/resume.html">Resume</a>
+        </nav>
+
+        <div class="nav-actions">
+                            <button class="theme-toggle icon-button" type="button" aria-label="Switch colour theme" title="Switch colour theme" data-theme-toggle>
+                    <span class="theme-icon" aria-hidden="true">◐</span>
+                </button>
+                        <a class="button button-small button-primary nav-contact" href="https://fahadnaeem.com/index.html#contact">Let’s talk</a>
+        </div>
+    </div>
+</header>
+<main id="main-content">
+    <article class="project-detail">
+        <header class="project-hero section">
+            <div class="container">
+                <a class="back-link" href="https://fahadnaeem.com/index.html#projects">← Back to all projects</a>
+                <div class="project-hero-grid">
+                    <div class="project-hero-copy reveal">
+                        <p class="eyebrow">Full-Stack · Document Automation · Image Processing · 2026</p>
+                        <h1>IDMatrix: Privacy-conscious ID card print production system</h1>
+                        <p class="project-subtitle">A software project and case study by <a href="https://fahadnaeem.com/index.html#about">Fahad Naeem</a>, full-stack developer with strong PHP and .NET expertise.</p>
+                        <p>A public converter and protected operations console that prepares front-and-back identity card images, applies optional export-only crossing labels, and generates print-ready DOCX and PDF sheets in an eight-copy A4 grid.</p>
+                        <div class="project-links">
+                                                            <a class="button button-primary" href="https://IDMatrix.FahadNaeem.com" target="_blank" rel="noopener noreferrer">Live demo <span aria-hidden="true">↗</span></a>
+                                                    </div>
+                    </div>
+                    <div class="project-hero-image reveal">
+                        <img src="https://fahadnaeem.com/assets/images/projects/idmatrix-sample-upload.png" alt="IDMatrix interface preview" width="1600" height="900">
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <nav class="project-subnav" aria-label="On this project page">
+            <div class="container">
+                <a href="https://fahadnaeem.com/projects/idmatrix.html#overview">Overview</a>
+                <a href="https://fahadnaeem.com/projects/idmatrix.html#features">Features</a>
+                <a href="https://fahadnaeem.com/projects/idmatrix.html#screenshots">Screenshots</a>
+                <a href="https://fahadnaeem.com/projects/idmatrix.html#technologies">Technologies</a>
+                <a href="https://fahadnaeem.com/projects/idmatrix.html#challenges">Challenges</a>
+                <a href="https://fahadnaeem.com/projects/idmatrix.html#solutions">Solutions</a>
+                <a href="https://fahadnaeem.com/projects/idmatrix.html#results">Results</a>
+            </div>
+        </nav>
+
+        <div class="container project-story">
+            <section class="project-story-section reveal" id="overview">
+                <p class="eyebrow">01 · Overview</p>
+                <h2>About the IDMatrix software platform</h2>
+                <p class="large-copy">IDMatrix is a focused document-production system for organizations that repeatedly prepare identity card copies for verification, education, government, banking, SIM registration, office records, and similar administrative workflows. A public converter lets visitors upload a front image, a back image, or both; crop, rotate, enhance, and preview each side; optionally add a purpose-specific crossing label; and download Word, PDF, or both. A protected administrator workspace adds operational dashboards, named jobs, print history, reusable crossing presets, organization branding, print margins, compression controls, storage cleanup, theme settings, password management, and system logs.</p>
+            </section>
+
+            <section class="project-story-section reveal" id="features">
+                <p class="eyebrow">02 · Features</p>
+                <h2>IDMatrix features and capabilities</h2>
+                <div class="numbered-grid">
+                                            <div><span>01</span><p>Separate public self-service converter and authenticated administration workspace with session-protected routes</p></div>
+                                            <div><span>02</span><p>Independent front and back uploads with in-browser preview, crop, rotate, auto edge trimming, and contrast and sharpness enhancement</p></div>
+                                            <div><span>03</span><p>Print-ready A4 output with eight copies arranged in a precise 4×2 grid and separate pages for the front and back sides</p></div>
+                                            <div><span>04</span><p>DOCX generation through PHPWord and PDF generation through TCPDF, including download and inline PDF preview paths</p></div>
+                                            <div><span>05</span><p>Optional diagonal crossing labels with reusable purpose presets, custom text, scalable size, visible-opacity control, and bold styling</p></div>
+                                            <div><span>06</span><p>Privacy-preserving export flow that keeps uploaded source images clean and applies crossing text only to temporary export assets</p></div>
+                                            <div><span>07</span><p>Administrator dashboard with total, completed, pending, and daily job metrics plus public/admin workload and storage summaries</p></div>
+                                            <div><span>08</span><p>Searchable print history with source and status filters, saved crossing metadata, document re-downloads, previews, and job deletion controls</p></div>
+                                            <div><span>09</span><p>Configurable company identity, page title, A4 margins, image compression, light or dark theme, and primary accent color</p></div>
+                                            <div><span>10</span><p>Storage safeguards with per-scope cleanup, configurable automatic thresholds, generated-file accounting, and system activity logs</p></div>
+                                    </div>
+            </section>
+
+            <section class="project-story-section reveal" id="screenshots">
+                <p class="eyebrow">03 · Screenshots</p>
+                <h2>IDMatrix interface screenshots</h2>
+                <div class="screenshot-grid screenshot-grid--3">
+                                            <a href="https://fahadnaeem.com/assets/images/projects/idmatrix-sample-upload.png" target="_blank" rel="noopener" class="screenshot-link">
+                            <img src="https://fahadnaeem.com/assets/images/projects/idmatrix-sample-upload.png" alt="IDMatrix previewing clearly fictional sample identity card front and back images" loading="lazy" width="1600" height="900">
+                            <span>Open image ↗</span>
+                        </a>
+                                            <a href="https://fahadnaeem.com/assets/images/projects/idmatrix-generated.png" target="_blank" rel="noopener" class="screenshot-link">
+                            <img src="https://fahadnaeem.com/assets/images/projects/idmatrix-generated.png" alt="IDMatrix sample workflow with cleanup options enabled and the generated PDF ready" loading="lazy" width="1600" height="900">
+                            <span>Open image ↗</span>
+                        </a>
+                                            <a href="https://fahadnaeem.com/assets/images/projects/idmatrix-pdf-preview.png" target="_blank" rel="noopener" class="screenshot-link">
+                            <img src="https://fahadnaeem.com/assets/images/projects/idmatrix-pdf-preview.png" alt="IDMatrix generated PDF preview with fictional card copies arranged in a print-ready A4 grid" loading="lazy" width="1600" height="900">
+                            <span>Open image ↗</span>
+                        </a>
+                                    </div>
+            </section>
+
+            <section class="project-story-section reveal" id="technologies">
+                <p class="eyebrow">04 · Technologies</p>
+                <h2>Technology stack used for IDMatrix</h2>
+                <div class="large-tag-list">
+                    <span>PHP 8</span><span>MySQL</span><span>PDO</span><span>JavaScript</span><span>HTML5</span><span>CSS3</span><span>GD</span><span>PHPWord</span><span>TCPDF</span>                </div>
+            </section>
+
+            <section class="project-story-section split-story reveal" id="challenges">
+                <div><p class="eyebrow">05 · Challenges</p><h2>IDMatrix engineering challenges</h2></div>
+                <ul class="story-list"><li>Producing correctly sized, repeatable identity-card grids across both editable Word documents and fixed-layout PDFs</li><li>Improving inconsistent phone-camera scans while retaining legibility and avoiding destructive changes to the clean uploaded source</li><li>Supporting an accessible public workflow without losing the auditability, configuration, and lifecycle control required by administrators</li><li>Applying prominent purpose labels that remain readable on varied card artwork without baking those labels into the retained upload</li><li>Preventing an image-heavy public service from consuming storage indefinitely as uploads and generated documents accumulate</li></ul>
+            </section>
+
+            <section class="project-story-section split-story reveal" id="solutions">
+                <div><p class="eyebrow">06 · Solutions</p><h2>Fahad Naeem’s development approach</h2></div>
+                <ul class="story-list"><li>Centralized the 4×2 layout rules, A4 margins, crop geometry, divider lines, and side-specific pagination in shared DOCX and PDF generation functions</li><li>Built a GD-based processing pipeline with proportional resizing, automatic edge detection, image enhancement, rotation and crop support, and configurable compression</li><li>Recorded every job in MySQL with source, status, output filenames, crossing configuration, creator, and timestamp so public and administrator activity share one operational history</li><li>Rendered crossing text onto temporary export images only, with validated presets and bounded size and opacity values, preserving clean originals for safe regeneration</li><li>Added storage measurement, public/admin job segmentation, threshold-based oldest-first cleanup, explicit reset scopes, and action logging for maintainable long-running use</li></ul>
+            </section>
+
+            <section class="project-story-section result-section reveal" id="results">
+                <p class="eyebrow">07 · Results</p>
+                <h2>IDMatrix project results</h2>
+                <div class="result-grid"><div><span aria-hidden="true">✓</span><p>A short workflow from photographed card sides to consistent, downloadable eight-copy A4 sheets in Word, PDF, or both formats</p></div><div><span aria-hidden="true">✓</span><p>Purpose-specific crossing controls that reduce accidental reuse while preserving unmodified source uploads</p></div><div><span aria-hidden="true">✓</span><p>One installation serving both walk-up public conversion and administrator-managed production without duplicating the processing engine</p></div><div><span aria-hidden="true">✓</span><p>A proven operational history of 579 completed local jobs spanning both DOCX and PDF generation</p></div><div><span aria-hidden="true">✓</span><p>A portable PHP and MySQL application that runs directly on XAMPP and standard hosting with organization-controlled branding and print settings</p></div></div>
+            </section>
+
+            <aside class="next-project reveal">
+                                                        <p class="eyebrow">Next case study</p>
+                    <a href="https://fahadnaeem.com/projects/arenora.html">
+                        <span><strong>Arenora</strong><small>Stadium booking, finance, and operations platform</small></span>
+                        <span aria-hidden="true">→</span>
+                    </a>
+                            </aside>
+        </div>
+    </article>
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@id":"https://fahadnaeem.com/projects/idmatrix.html#project","@type":"CreativeWork","name":"IDMatrix: Privacy-conscious ID card print production system","headline":"IDMatrix: Privacy-conscious ID card print production system | Fahad Naeem","description":"A public converter and protected operations console that prepares front-and-back identity card images, applies optional export-only crossing labels, and generates print-ready DOCX and PDF sheets in an eight-copy A4 grid.","image":[{"@type":"ImageObject","contentUrl":"https://fahadnaeem.com/assets/images/projects/idmatrix-sample-upload.png","url":"https://fahadnaeem.com/assets/images/projects/idmatrix-sample-upload.png","description":"IDMatrix previewing clearly fictional sample identity card front and back images","width":1600,"height":900},{"@type":"ImageObject","contentUrl":"https://fahadnaeem.com/assets/images/projects/idmatrix-generated.png","url":"https://fahadnaeem.com/assets/images/projects/idmatrix-generated.png","description":"IDMatrix sample workflow with cleanup options enabled and the generated PDF ready","width":1600,"height":900},{"@type":"ImageObject","contentUrl":"https://fahadnaeem.com/assets/images/projects/idmatrix-pdf-preview.png","url":"https://fahadnaeem.com/assets/images/projects/idmatrix-pdf-preview.png","description":"IDMatrix generated PDF preview with fictional card copies arranged in a print-ready A4 grid","width":1600,"height":900}],"primaryImageOfPage":{"@type":"ImageObject","contentUrl":"https://fahadnaeem.com/assets/images/projects/idmatrix-sample-upload.png","url":"https://fahadnaeem.com/assets/images/projects/idmatrix-sample-upload.png","description":"IDMatrix previewing clearly fictional sample identity card front and back images","width":1600,"height":900},"creator":{"@id":"https://fahadnaeem.com/#fahad-naeem"},"author":{"@id":"https://fahadnaeem.com/#fahad-naeem"},"dateCreated":"2026-01-01","genre":["Full-Stack","Document Automation","Image Processing"],"keywords":"PHP 8, MySQL, PDO, JavaScript, HTML5, CSS3, GD, PHPWord, TCPDF","url":"https://fahadnaeem.com/projects/idmatrix.html","mainEntityOfPage":"https://fahadnaeem.com/projects/idmatrix.html","isPartOf":{"@id":"https://fahadnaeem.com/#website"},"inLanguage":"en"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Fahad Naeem","item":"https://fahadnaeem.com/"},{"@type":"ListItem","position":2,"name":"Software Projects","item":"https://fahadnaeem.com/#projects"},{"@type":"ListItem","position":3,"name":"IDMatrix","item":"https://fahadnaeem.com/projects/idmatrix.html"}]}]}</script>
+</main>
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <div>
+            <a class="brand footer-brand" href="https://fahadnaeem.com/index.html">
+                <span class="brand-mark" aria-hidden="true">FN</span>
+                <span class="brand-copy"><strong>Fahad Naeem</strong><small>Full-Stack Developer</small></span>
+            </a>
+            <p>Fahad Naeem builds dependable full-stack PHP, MySQL, JavaScript, C#, ASP.NET, API, SQL, and Windows software.</p>
+        </div>
+        <div class="footer-links">
+            <strong>Navigate</strong>
+            <a href="https://fahadnaeem.com/index.html#about">About</a>
+            <a href="https://fahadnaeem.com/index.html#projects">Projects</a>
+            <a href="https://fahadnaeem.com/behind-the-build.html">My Space</a>
+            <a href="https://fahadnaeem.com/index.html#services">Services</a>
+            <a href="https://fahadnaeem.com/index.html#contact">Contact</a>
+        </div>
+        <div class="footer-contact">
+            <strong>Connect</strong>
+            <a href="mailto:fahadnaeem424@gmail.com">fahadnaeem424@gmail.com</a>
+            <span>Multan, Pakistan</span>
+            <div class="social-links footer-socials" aria-label="Professional profiles">
+            <a href="https://github.com/FahadNaeem424" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
+            <span aria-hidden="true">GH</span>
+        </a>
+            <a href="https://www.linkedin.com/in/fahadnaeem424/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
+            <span aria-hidden="true">in</span>
+        </a>
+            <a href="https://www.fiverr.com/fahadnaeem424" target="_blank" rel="noopener noreferrer" aria-label="Fiverr" title="Fiverr">
+            <span aria-hidden="true">fi</span>
+        </a>
+            <a href="https://upwork.com/freelancers/fahadn65" target="_blank" rel="noopener noreferrer" aria-label="Upwork" title="Upwork">
+            <span aria-hidden="true">up</span>
+        </a>
+            <a href="mailto:fahadnaeem424@gmail.com" aria-label="Email" title="Email">
+            <span aria-hidden="true">@</span>
+        </a>
+    </div>
+        </div>
+    </div>
+    <div class="container footer-bottom">
+        <p>© 2024–2026 Fahad Naeem. All rights reserved.</p>
+        <a href="https://fahadnaeem.com/projects/idmatrix.html#main-content">Back to top ↑</a>
+    </div>
+</footer>
+<script src="https://fahadnaeem.com/assets/js/main.js?v=1786805382" defer></script>
+</body>
+</html>
